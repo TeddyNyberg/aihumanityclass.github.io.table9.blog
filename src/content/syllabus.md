@@ -13,6 +13,7 @@ This course is in development. The partial preliminary syllabus here is provided
 
 This course explores impacts of AI on humanity, with a focus on understanding and mitigating unintended harms from AI and intended abuses of AI systems. Expected topics include fairness, privacy, copyright infringement, robustness, safety, economic disruption, and cultural diminishment.
 
+**Meetings:** Tuesdays and Thursdays, 9:30-10:45am in Olsson 018.
 
 # Preparation
 

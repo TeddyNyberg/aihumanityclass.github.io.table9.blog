@@ -45,7 +45,9 @@ usually respond to emails quickly and reliably (at least I try to!), so if you d
 ### Assistants
 
 [Bijan Boroumand](TODO). 
+
 [Clara Gimmelbein](TOOD). 
+
 [Mughesh Kumar](TODO). 
 
 

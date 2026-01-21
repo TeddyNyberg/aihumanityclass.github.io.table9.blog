@@ -1,11 +1,32 @@
 {{ define "main" }}
-<div class="row">
-  <div class="column small-12">
-    {{ $paginator := .Paginate .Data.Pages }}
-    {{ range $paginator.Pages }}
-    {{ partial "post-summary" . }}
+
+<div class="content">
+
+
+  <h1>{{ .Title }}</h1>
+
+    {{ $content := .Content }}
+    {{ $delimiter := "<!--split-->" }}
+    {{ $parts := split $content $delimiter }}
+
+    <div class="top-content">
+      {{ index $parts 0 | safeHTML }}
+    </div>
+
+    <ul class="blog-list">
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+
+    {{ if gt (len $parts) 1 }}
+      <div class="bottom-content">
+        {{ index $parts 1 | safeHTML }}
+      </div>
     {{ end }}
-    {{ partial "pagination" . }}
-  </div>
+
+  </main>
 </div>
+
+
 {{ end }}
